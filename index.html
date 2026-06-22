@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoor Mahal by Dil | Luxury Ladies Salon & Bridal Studio Hyderabad</title>
+    
+    <!-- Meta tags for premium SEO search indexing -->
+    <meta name="description" content="Welcome to Hoor Mahal by Dil, the leading premium luxury ladies beauty salon and bridal studio in Latifabad Unit 6, Hyderabad. Experience exceptional bridal makeup, skincare, and couture hairstyling." />
+    <meta name="keywords" content="Hoor Mahal, Dil salon Hyderabad, bridal makeup Latifabad, ladies beauty saloon Unit 6, luxury bridal studio Sindh Pakistan" />
+
+    <!-- Tailwind CSS 3 Play CDN for robust reactive design offline and on GitHub Pages -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              salonPrimary: '#FFF7FA',
+              salonSecondary: '#FCEEF4',
+              salonAccent: '#C97B91',
+              salonAccentHover: '#D8A0B2',
+              salonSoftPink: '#F7DCE6',
+              salonText: '#2B2B2B'
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif'],
+              cinzel: ['Cinzel', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Custom Luxury Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icon Library via officially supported CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-salonPrimary text-salonText min-h-screen selection:bg-salonSoftPink selection:text-salonText font-sans overflow-x-hidden">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-salonPrimary/90 backdrop-blur-md border-b border-salonSoftPink luxury-shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+        
+        <!-- Luxury Brand Logo -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-full border border-salonAccent flex items-center justify-center bg-salonSecondary luxury-shadow group-hover:border-salonAccentHover transition-colors">
+            <span class="font-cinzel text-md font-bold text-salonAccent group-hover:text-salonAccentHover tracking-widest">HM</span>
+          </div>
+          <div>
+            <span class="font-cinzel text-base sm:text-lg font-bold tracking-widest text-salonText block">HOOR MAHAL</span>
+            <span class="text-[9px] uppercase tracking-[0.25em] text-salonAccent block -mt-1">by Dil Luxury Salon</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <nav class="hidden lg:flex items-center gap-7 text-xs uppercase tracking-widest font-semibold">
+          <a href="#about" class="text-salonText hover:text-salonAccent transition-colors">About Us</a>
+          <a href="#services" class="text-salonText hover:text-salonAccent transition-colors">Services</a>
+          <a href="#package-planner" class="text-salonText hover:text-salonAccent transition-colors">Package Planner</a>
+          <a href="#bridal" class="text-salonText hover:text-salonAccent transition-colors">Bridal Experience</a>
+          <a href="#testimonials" class="text-salonText hover:text-salonAccent transition-colors">Testimonials</a>
+          <a href="#contact" class="text-salonText hover:text-salonAccent transition-colors">Contact</a>
+        </nav>
+
+        <!-- CTA Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/923091152287?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="text-xs uppercase tracking-widest font-semibold px-4 py-2.5 rounded-lg border border-salonAccent hover:bg-salonAccent hover:text-white transition-all luxury-shadow-sm flex items-center gap-1.5 outline-gold-btn">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            WhatsApp Chat
+          </a>
+          <a href="#contact" class="text-xs uppercase tracking-widest font-semibold px-5 py-2.5 rounded-lg gold-btn text-white transition-all luxury-shadow flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+            Book Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-salonText hover:text-salonAccent transition-colors rounded-lg focus:outline-none" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Menu Drawer -->
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-salonPrimary border-l border-salonSoftPink luxury-shadow-lg p-6 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+      <div class="flex items-center justify-between border-b border-salonSoftPink pb-6 mb-6">
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-full border border-salonAccent flex items-center justify-center bg-salonSecondary">
+            <span class="font-cinzel text-xs font-bold text-salonAccent tracking-widest">HM</span>
+          </div>
+          <span class="font-cinzel text-md font-bold tracking-widest text-salonText">HOOR MAHAL</span>
+        </div>
+        <button id="mobile-menu-close" class="p-2 text-salmonText hover:text-salonAccent transition-colors rounded-lg focus:outline-none" aria-label="Close navigation menu">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      
+      <div class="flex flex-col gap-5 text-sm uppercase tracking-widest font-semibold mb-8">
+        <a href="#about" class="mobile-link py-2 text-salonText hover:text-salonAccent border-b border-salonSoftPink/30 transition-all flex justify-between items-center">
+          About Us <i data-lucide="chevron-right" class="w-4 h-4 text-salonAccent"></i>
+        </a>
+        <a href="#services" class="mobile-link py-2 text-salonText hover:text-salonAccent border-b border-salonSoftPink/30 transition-all flex justify-between items-center">
+          Signature Services <i data-lucide="chevron-right" class="w-4 h-4 text-salonAccent"></i>
+        </a>
+        <a href="#package-planner" class="mobile-link py-2 text-salonText hover:text-salonAccent border-b border-salonSoftPink/30 transition-all flex justify-between items-center">
+          Package Planner <i data-lucide="chevron-right" class="w-4 h-4 text-salonAccent"></i>
+        </a>
+        <a href="#bridal" class="mobile-link py-2 text-salonText hover:text-salonAccent border-b border-salonSoftPink/30 transition-all flex justify-between items-center">
+          Bridal Experience <i data-lucide="chevron-right" class="w-4 h-4 text-salonAccent"></i>
+        </a>
+        <a href="#testimonials" class="mobile-link py-2 text-salonText hover:text-salonAccent border-b border-salonSoftPink/30 transition-all flex justify-between items-center">
+          Client Feedback <i data-lucide="chevron-right" class="w-4 h-4 text-salonAccent"></i>
+        </a>
+        <a href="#contact" class="mobile-link py-2 text-salonText hover:text-salonAccent border-b border-salonSoftPink/30 transition-all flex justify-between items-center">
+          Contact Details <i data-lucide="chevron-right" class="w-4 h-4 text-salonAccent"></i>
+        </a>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <a href="https://wa.me/923091152287?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="w-full text-center py-3 rounded-xl border border-salonAccent text-salonAccent font-semibold tracking-widest uppercase text-xs hover:bg-salonAccent hover:text-white transition-all flex items-center justify-center gap-2">
+          <i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp Chat
+        </a>
+        <a href="#contact" class="mobile-link w-full text-center py-3 rounded-xl bg-salonAccent text-white font-semibold tracking-widest uppercase text-xs hover:bg-salonAccentHover transition-all flex items-center justify-center gap-2 shadow-lg shadow-salonAccent/20">
+          <i data-lucide="calendar" class="w-4 h-4"></i> Book Appointment
+        </a>
+      </div>
+    </div>
+
+    <!-- Section 1: Hero Section -->
+    <section id="hero" class="relative luxury-gradient-bg min-h-[90vh] flex items-center py-16 md:py-24 border-b border-salonSoftPink overflow-hidden">
+      
+      <!-- Premium Design Accents (Geometric Vector-feeling pure CSS elements instead of physical images) -->
+      <div class="absolute inset-0 bg-radial-gradient from-transparent to-salonPrimary pointer-events-none"></div>
+      <div class="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full border border-salonAccent/10 pointer-events-none"></div>
+      <div class="absolute top-[20%] right-[-100px] w-96 h-96 rounded-full bg-salonSoftPink/30 filter blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-[10%] left-[5%] w-72 h-72 rounded-full border border-dashed border-salonAccent/15 pointer-events-none animate-[spin_120s_linear_infinite]"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Column 1: Core Hero Content -->
+          <div class="space-y-8 lg:col-span-7 text-center lg:text-left">
+            
+            <!-- Beautiful Google Star Rating Tag -->
+            <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-salonAccent/20 luxury-shadow-sm mx-auto lg:mx-0">
+              <div class="flex items-center gap-0.5">
+                <i data-lucide="star" class="w-4.5 h-4.5 text-amber-500 fill-current"></i>
+                <i data-lucide="star" class="w-4.5 h-4.5 text-amber-500 fill-current"></i>
+                <i data-lucide="star" class="w-4.5 h-4.5 text-amber-500 fill-current"></i>
+                <i data-lucide="star" class="w-4.5 h-4.5 text-amber-500 fill-current"></i>
+                <i data-lucide="star" class="w-4.5 h-4.5 text-amber-500 fill-current"></i>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-wider text-salonText">4.9 Star Google Rating</span>
+              <span class="text-xs text-gray-400">|</span>
+              <span class="text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded">243+ Verified Reviews</span>
+            </div>
+
+            <!-- Display Headline -->
+            <div class="space-y-4">
+              <h1 class="font-editorial text-4xl sm:text-5xl md:text-6xl text-salonText leading-tight tracking-tight">
+                Luxury Beauty & <br class="hidden sm:block">
+                <span class="font-cinzel text-salonAccent tracking-wider font-semibold block sm:inline">Bridal Services</span><br class="hidden sm:block">
+                In Hyderabad
+              </h1>
+              <p class="text-gray-600 max-w-xl mx-auto lg:mx-0 text-base sm:text-lg leading-relaxed font-light">
+                Experience premium beauty treatments, bridal transformations, skincare and hair artistry in a luxurious environment. Guided by the elite expertise of Dil.
+              </p>
+            </div>
+
+            <!-- Action Buttons with WhatsApp integration -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="https://wa.me/923091152287?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl font-cinzel text-sm tracking-widest uppercase font-bold text-white gold-btn shadow-xl shadow-salonAccent/25 text-center flex items-center justify-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                Book Appointment
+              </a>
+              <a href="https://wa.me/923091152287" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl font-cinzel text-sm tracking-widest uppercase font-bold text-salonAccent border-2 border-salonAccent hover:bg-salonAccent hover:text-white transition-all text-center flex items-center justify-center gap-2 bg-white/80 backdrop-blur-sm luxury-shadow-sm">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                Chat On WhatsApp
+              </a>
+            </div>
+
+            <!-- Small Footer Accent list for Hero -->
+            <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-salonSoftPink/50 text-left max-w-md sm:max-w-xl mx-auto lg:mx-0">
+              <div class="flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-salonAccent"></span>
+                <span class="text-xs uppercase tracking-widest font-semibold text-gray-700">Premium Bridal Studio</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-salonAccent"></span>
+                <span class="text-xs uppercase tracking-widest font-semibold text-gray-700">Elite Stylist Dil</span>
+              </div>
+              <div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
+                <span class="w-2.5 h-2.5 rounded-full bg-salonAccent"></span>
+                <span class="text-xs uppercase tracking-widest font-semibold text-gray-700">Immaculate Hygiene</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Luxury Design Card Block (Aesthetic non-image art piece representing the bridal luxury brand) -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-[420px] aspect-[4/5] bg-salonSecondary rounded-3xl p-8 md:p-10 border border-salonAccent/20 luxury-shadow-lg relative overflow-hidden flex flex-col justify-between animate-float">
+              
+              <!-- Pure CSS Graphic Styling -->
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,var(--salonSoftPink)_0%,transparent_60%)]"></div>
+              <div class="absolute top-0 right-0 w-32 h-32 border-b border-l border-dashed border-salonAccent/20 rounded-bl-3xl"></div>
+              <div class="absolute bottom-8 right-8 w-16 h-16 border-t border-l border-salonAccent/30 rounded-tl-xl"></div>
+              
+              <div class="relative z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                  <span class="h-[1.5px] w-8 bg-salonAccent"></span>
+                  <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-salonAccent">LATIFABAD UNIT 6</span>
+                </div>
+                <h3 class="font-cinzel text-xl text-salonText tracking-widest mt-2 uppercase font-semibold">THE BRIDAL CHAMBER EST.</h3>
+                <span class="text-xs italic text-gray-500 font-serif">A sanctuary of pure pampering, art, and timeless glamor.</span>
+              </div>
+
+              <!-- Center Medal Pattern -->
+              <div class="my-auto py-12 flex flex-col items-center justify-center relative">
+                <div class="w-32 h-32 rounded-full border-2 border-double border-salonAccent flex flex-col items-center justify-center bg-white luxury-shadow relative">
+                  <span class="font-cinzel text-3xl font-light text-salonAccent tracking-wider">HMD</span>
+                  <span class="text-[7px] uppercase tracking-[0.3em] text-salonAccent -mt-1 font-bold">HYDERABAD</span>
+                  <!-- Small orbiting decorative spots -->
+                  <div class="absolute rounded-full w-2 h-2 bg-salonAccent -top-1"></div>
+                  <div class="absolute rounded-full w-2 h-2 bg-salonAccent -bottom-1"></div>
+                </div>
+              </div>
+
+              <div class="relative z-10 border-t border-salonSoftPink pt-6 space-y-3">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-500 font-medium">Salon Director:</span>
+                  <span class="text-salonText font-semibold tracking-wide">Elite Stylist Dil</span>
+                </div>
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-500 font-medium">Guest Services:</span>
+                  <span class="text-salonAccent font-semibold tracking-widest uppercase">By Reservation Only</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-gray-500 font-medium">Est. Comfort Rating:</span>
+                  <span class="text-amber-600 font-bold tracking-wider">★★★★★ Excellent</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive VIP Client Notification Banner (Dynamically populated from index state if user saved previous inputs) -->
+    <section id="vip-appts-card" class="hidden bg-emerald-50 border-y border-emerald-100 py-6">
+      <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">
+            <i data-lucide="check-circle" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-cinzel font-bold text-emerald-900 text-sm tracking-wider">ACTIVE RESERVATION DISPATCH FOUND</h4>
+            <p class="text-xs text-emerald-700 font-medium">You have a pending inquiry drafted. Make sure to complete the WhatsApp forward!</p>
+          </div>
+        </div>
+        <div id="vip-appts-list" class="w-full md:w-auto max-w-sm">
+          <!-- Populated from script.js dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: About Us -->
+    <section id="about" class="py-20 md:py-28 bg-salonSecondary border-b border-salonSoftPink relative">
+      <div class="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-salonSoftPink/20 filter blur-3xl pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          <!-- Column 1: Luxury Decorative Graphic Blocks -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="p-8 md:p-12 luxury-border bg-salonPrimary rounded-3xl luxury-shadow-sm space-y-6 relative overflow-hidden">
+              <div class="absolute top-0 left-0 w-2 h-full bg-salonAccent"></div>
+              
+              <div class="w-14 h-14 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent luxury-shadow-sm">
+                <i data-lucide="crown" class="w-7 h-7"></i>
+              </div>
+              
+              <h3 class="font-cinzel text-xl font-bold tracking-wider text-salonText uppercase">The Legacy of Dil</h3>
+              <p class="text-gray-600 text-sm leading-relaxed font-light">
+                Hoor Mahal represents more than cosmetic styling; it is a sacred space in Hyderabad where beauty is celebrated as a high-end editorial art. Our salon is built on the pursuit of individual aesthetics, exquisite bridal transformation, and uncompromised hygiene.
+              </p>
+              
+              <div class="space-y-3.5 border-t border-salonSoftPink pt-6">
+                <div class="flex items-center gap-3 text-xs">
+                  <i data-lucide="check" class="w-4.5 h-4.5 text-salonAccent hover:scale-110 transition-transform"></i>
+                  <span class="font-medium text-gray-700">Immaculate Single-Use Sterile Kits</span>
+                </div>
+                <div class="flex items-center gap-3 text-xs">
+                  <i data-lucide="check" class="w-4.5 h-4.5 text-salonAccent hover:scale-110 transition-transform"></i>
+                  <span class="font-medium text-gray-700">Internationally-Trained Master Makeup Artists</span>
+                </div>
+                <div class="flex items-center gap-3 text-xs">
+                  <i data-lucide="check" class="w-4.5 h-4.5 text-salonAccent hover:scale-110 transition-transform"></i>
+                  <span class="font-medium text-gray-700">Exclusive Luxury Airbrush Aesthetics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Informative About Content -->
+          <div class="lg:col-span-7 space-y-8">
+            <div class="space-y-4">
+              <span class="text-xs font-bold tracking-[0.3em] text-salonAccent uppercase block">A Heritage of Flawless Elegance</span>
+              <h2 class="font-editorial text-3xl sm:text-4xl md:text-5xl text-salonText leading-tight tracking-tight">
+                Hyderabad's Premier Bridal <br>
+                & Pampering Sanctuary
+              </h2>
+            </div>
+            
+            <p class="text-gray-600 leading-relaxed text-base font-light">
+              Situated in the elite heart of Latifabad Unit 6, <strong>Hoor Mahal by Dil Luxury Beauty Saloon</strong> represents the absolute pinnacle of luxury bridal care and sophisticated beauty services. We believe that every woman deserves an editorial-grade salon experience tailored specifically to her unique features, skin physiology, and celebration aesthetics.
+            </p>
+            
+            <p class="text-gray-600 leading-relaxed text-base font-light">
+              Under the direct artistic vision of master aesthetician Dil, we combine internationally imported elite beauty formulations (such as Charlotte Tilbury, Dior, and Huda Beauty) with traditional, hyper-hygienic bridal preparation rituals. From our calming thermal hair styling pathways to clinical-grade skin conditioning facials, we pride ourselves on giving Hyderabad's modern brides a stunning transformation that stands the test of time, cameras, and emotion.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 border-t border-salonSoftPink">
+              <div>
+                <h4 class="font-cinzel text-2xl font-bold text-salonAccent">243+</h4>
+                <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold mt-1">Verified Brides & Clients</p>
+              </div>
+              <div>
+                <h4 class="font-cinzel text-2xl font-bold text-salonAccent">4.9 ★</h4>
+                <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold mt-1">Google Star Rating</p>
+              </div>
+              <div class="col-span-2 md:col-span-1">
+                <h4 class="font-cinzel text-2xl font-bold text-salonAccent">Latifabad 6</h4>
+                <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold mt-1">Prime Bungalow Venue</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="#contact" class="inline-flex items-center gap-3 text-xs uppercase tracking-widest font-bold text-salonAccent hover:text-salonAccentHover transition-colors">
+                Explore Studio Gallery & Map <span class="text-lg">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Signature Services -->
+    <section id="services" class="py-20 md:py-28 bg-salonPrimary border-b border-salonSoftPink relative">
+      <div class="absolute top-[10%] left-[-100px] w-80 h-80 rounded-full bg-salonSoftPink/20 filter blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section Info -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-[0.35em] text-salonAccent uppercase block">Aesthetic Menu Options</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl md:text-5xl text-salonText leading-tight tracking-tight">Our Elite Portfolio Services</h2>
+          <div class="h-0.5 w-24 bg-salonAccent mx-auto mt-4 rounded-full"></div>
+          <p class="text-gray-600 text-sm sm:text-base leading-relaxed font-light max-w-2xl mx-auto">
+            Indulge in a premium catalog of curated skin, makeup, and hair therapies meticulously performed using highly sterile single-use equipment.
+          </p>
+        </div>
+
+        <!-- Bento Grid Services Layout (No images - utilizing luxury gold cards and typography styling) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Bridal Makeup (Feature Highlighted) -->
+          <div class="lg:col-span-2 bg-salonSecondary rounded-3xl p-8 md:p-10 border border-salonAccent/30 luxury-shadow-lg flex flex-col justify-between relative overflow-hidden service-card">
+            <div class="absolute top-0 right-0 w-36 h-36 bg-salonSoftPink/40 rounded-bl-[100px] -z-1"></div>
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent luxury-shadow-sm">
+                  <i data-lucide="crown" class="w-6.5 h-6.5"></i>
+                </div>
+                <span class="bg-salonAccent/10 text-salonAccent text-[10px] uppercase tracking-widest font-bold px-3 py-1.5 rounded-full">Signature Elite Art</span>
+              </div>
+              <h3 class="font-cinzel text-2xl font-bold tracking-wider text-salonText mb-3">ROYAL BRIDAL MAKEUP TRANSFORMATION</h3>
+              <p class="text-gray-600 text-sm leading-relaxed font-light mb-6">
+                Tailored royal bridal packages focusing on flawless HD makeup, deep line definition, customized lashes, jewelry setting, and dupata draping. Perfect for Barat & Valima. Included is a detailed prep ritual designed to match your photography styling.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between pt-6 border-t border-salonSoftPink gap-4">
+              <div>
+                <span class="text-[10px] uppercase tracking-widest text-gray-400 block font-semibold">Exquisite Investment</span>
+                <span class="text-lg font-cinzel font-bold text-salonAccent">Pricing on Consultation</span>
+              </div>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20like%20to%20inquire%20about%20the%20Barat/Valima%20Bridal%20Makeup%20packages." target="_blank" class="px-6 py-3 rounded-xl border border-salonAccent text-salonAccent font-semibold font-cinzel tracking-wider text-xs hover:bg-salonAccent hover:text-white transition-all text-center">
+                Detailed Inquiry
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Party Makeup -->
+          <div class="bg-salonSecondary rounded-3xl p-8 border border-salonSoftPink luxury-shadow-sm flex flex-col justify-between service-card">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent mb-6">
+                <i data-lucide="sparkles" class="w-5.5 h-5.5"></i>
+              </div>
+              <h3 class="font-cinzel text-xl font-bold tracking-wider text-salonText mb-2">HD GLAM PARTY MAKEUP</h3>
+              <p class="text-gray-600 text-xs leading-relaxed font-light mb-6">
+                Premium high-definition makeup for engagements, baby showers, pre-wedding gatherings or formal festivals in Hyd. Created to withstand climate and look striking on smart lenses.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-salonSoftPink flex items-center justify-between">
+              <div>
+                <span class="text-[9px] uppercase tracking-widest text-gray-400 block font-semibold">Starts From</span>
+                <span class="text-base font-cinzel font-bold text-salonAccent">PKR 8,000+</span>
+              </div>
+              <a href="https://wa.me/923091152287?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20Party%20Makeup%20pricing." target="_blank" class="w-8 h-8 rounded-full border border-salonAccent/30 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Hair Styling -->
+          <div class="bg-salonSecondary rounded-3xl p-8 border border-salonSoftPink luxury-shadow-sm flex flex-col justify-between service-card">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent mb-6">
+                <i data-lucide="award" class="w-5.5 h-5.5"></i>
+              </div>
+              <h3 class="font-cinzel text-xl font-bold tracking-wider text-salonText mb-2">COUTURE HAIR ARTISTRY</h3>
+              <p class="text-gray-600 text-xs leading-relaxed font-light mb-6">
+                Stunning bridal updos, romantic waves, Hollywood curls, sleek blowouts, and intricate braided structures designed to frame your facial contours gracefully.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-salonSoftPink flex items-center justify-between">
+              <div>
+                <span class="text-[9px] uppercase tracking-widest text-gray-400 block font-semibold">Starts From</span>
+                <span class="text-base font-cinzel font-bold text-salonAccent">PKR 4,000+</span>
+              </div>
+              <a href="https://wa.me/923091152287?text=Hello,%20I%20want%20to%20book%20couture%20hair%20styling." target="_blank" class="w-8 h-8 rounded-full border border-salonAccent/30 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Hair Treatments -->
+          <div class="bg-salonSecondary rounded-3xl p-8 border border-salonSoftPink luxury-shadow-sm flex flex-col justify-between service-card">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent mb-6">
+                <i data-lucide="scissors" class="w-5.5 h-5.5"></i>
+              </div>
+              <h3 class="font-cinzel text-xl font-bold tracking-wider text-salonText mb-2">THERAPEUTIC HAIR HAIR-CARE</h3>
+              <p class="text-gray-600 text-xs leading-relaxed font-light mb-6">
+                Restore dry and split ends. Intensive keratin bonding, premium protein smoothing therapies, botanical hot-oils, and rejuvenating scalp-massage care.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-salonSoftPink flex items-center justify-between">
+              <div>
+                <span class="text-[9px] uppercase tracking-widest text-gray-400 block font-semibold">Starts From</span>
+                <span class="text-base font-cinzel font-bold text-salonAccent">PKR 15,000+</span>
+              </div>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20love%20to%20schedule%20a%20Keratin%20Hair%20Treatment." target="_blank" class="w-8 h-8 rounded-full border border-salonAccent/30 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Facial Treatments -->
+          <div class="bg-salonSecondary rounded-3xl p-8 border border-salonSoftPink luxury-shadow-sm flex flex-col justify-between service-card">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent mb-6">
+                <i data-lucide="smile" class="w-5.5 h-5.5"></i>
+              </div>
+              <h3 class="font-cinzel text-xl font-bold tracking-wider text-salonText mb-2">GOLD BRIGHTENING FACIALS</h3>
+              <p class="text-gray-600 text-xs leading-relaxed font-light mb-6">
+                Hydrating Gold, Janssen Herbal, and active oxygen skincare facials to bring natural, illuminated plumpness to tired dermal grids before massive banquet functions.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-salonSoftPink flex items-center justify-between">
+              <div>
+                <span class="text-[9px] uppercase tracking-widest text-gray-400 block font-semibold">Starts From</span>
+                <span class="text-base font-cinzel font-bold text-salonAccent">PKR 6,500+</span>
+              </div>
+              <a href="https://wa.me/923091152287?text=Hello,%20I%20want%20to%20know%20more%20about%20your%20facial%20treatments." target="_blank" class="w-8 h-8 rounded-full border border-salonAccent/30 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6: Skin Care Elixir -->
+          <div class="bg-salonSecondary rounded-3xl p-8 border border-salonSoftPink luxury-shadow-sm flex flex-col justify-between service-card">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent mb-6">
+                <i data-lucide="flower" class="w-5.5 h-5.5"></i>
+              </div>
+              <h3 class="font-cinzel text-xl font-bold tracking-wider text-salonText mb-2">SIGNATURE PEARL SKIN RATIONAL</h3>
+              <p class="text-gray-600 text-xs leading-relaxed font-light mb-6">
+                Botanical micro-exfoliation treatments, pore extraction, collagen restoration booster care, and safe dermis conditioning tailored carefully to sensitive Asian skins.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-salonSoftPink flex items-center justify-between">
+              <div>
+                <span class="text-[9px] uppercase tracking-widest text-gray-400 block font-semibold">Starts From</span>
+                <span class="text-base font-cinzel font-bold text-salonAccent">PKR 5,000+</span>
+              </div>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'm%20interested%20in%20Hoor%20Mahal's%20Pearl%20skin%20care." target="_blank" class="w-8 h-8 rounded-full border border-salonAccent/30 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 7: Manicure & Pedicure -->
+          <div class="bg-salonSecondary rounded-3xl p-8 border border-salonSoftPink luxury-shadow-sm flex flex-col justify-between service-card">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-salonSoftPink flex items-center justify-center text-salonAccent mb-6">
+                <i data-lucide="heart" class="w-5.5 h-5.5"></i>
+              </div>
+              <h3 class="font-cinzel text-xl font-bold tracking-wider text-salonText mb-2">LUXURY HAND & FOOT SPA</h3>
+              <p class="text-gray-600 text-xs leading-relaxed font-light mb-6">
+                Organic rose petaled manicure & pedicure spa sessions complete with paraffin moisture wraps, dead cell scaling, cuticle repair, and soothing reflexology therapy.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-salonSoftPink flex items-center justify-between">
+              <div>
+                <span class="text-[9px] uppercase tracking-widest text-gray-400 block font-semibold">Starts From</span>
+                <span class="text-base font-cinzel font-bold text-salonAccent">PKR 4,500+</span>
+              </div>
+              <a href="https://wa.me/923091152287?text=Hello,%20I%20would%20love%20to%20book%20a%20Luxury%20Manicure%20and%20Pedicure%20spa." target="_blank" class="w-8 h-8 rounded-full border border-salonAccent/30 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3b: Curated Beauty Package Planner (Tactile Interactive Selection Tool) -->
+    <section id="package-planner" class="py-20 md:py-28 bg-salonSecondary border-b border-salonSoftPink relative">
+      <div class="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(to_top,#FFF9FB_0%,transparent_100%)]"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center space-y-4 max-w-2xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-[0.35em] text-salonAccent uppercase block">Bespoke Customizer</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl md:text-5xl text-salonText leading-tight tracking-tight">Luxury Package Planner</h2>
+          <div class="h-0.5 w-24 bg-salonAccent mx-auto mt-4 rounded-full"></div>
+          <p class="text-gray-600 text-xs sm:text-sm leading-relaxed font-light">
+            Construct your dream beauty sequence dynamically. Choose multiple signature treatments to build your personalized bridal or pamper bundle and watch your exclusive package discount adjust instantly!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Column 1: Services Selector Checklist -->
+          <div class="lg:col-span-7 space-y-4">
+            <h3 class="font-cinzel text-lg font-bold tracking-widest text-salonText mb-4 flex items-center gap-2">
+              <i data-lucide="check-square" class="w-5 h-5 text-salonAccent"></i>
+              Select Your Studio Treatments
+            </h3>
+            
+            <div class="space-y-3.5">
+              
+              <!-- Service Switch Item 1 -->
+              <label class="flex items-center justify-between p-4 rounded-xl border border-salonSoftPink bg-salonPrimary hover:border-salonAccent/50 transition-all cursor-pointer group select-none">
+                <div class="flex items-center gap-3.5 flex-1 pr-4">
+                  <input type="checkbox" data-service-id="bridal-makeup" class="package-checkbox w-5.5 h-5.5 rounded border-salonAccent text-salonAccent focus:ring-salonAccent" />
+                  <div>
+                    <span class="font-cinzel text-xs sm:text-sm font-semibold text-salonText tracking-wide group-hover:text-salonAccent transition-colors block">Premium Royal Bridal Makeup Portfolio</span>
+                    <span class="text-[10px] text-gray-500 font-light">Flawless HD application, lash luxury, jewelry adjustments, and dupatta setting</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block font-medium">Fixed Rate</span>
+                  <span class="font-cinzel font-bold text-salonAccent text-xs sm:text-sm">PKR 35,000</span>
+                </div>
+              </label>
+
+              <!-- Service Switch Item 2 -->
+              <label class="flex items-center justify-between p-4 rounded-xl border border-salonSoftPink bg-salonPrimary hover:border-salonAccent/50 transition-all cursor-pointer group select-none">
+                <div class="flex items-center gap-3.5 flex-1 pr-4">
+                  <input type="checkbox" data-service-id="party-makeup" class="package-checkbox w-5.5 h-5.5 rounded border-salonAccent text-salonAccent focus:ring-salonAccent" />
+                  <div>
+                    <span class="font-cinzel text-xs sm:text-sm font-semibold text-salonText tracking-wide group-hover:text-salonAccent transition-colors block">HD Editorial & Glam Party Makeup</span>
+                    <span class="text-[10px] text-gray-500 font-light">Luminous photo-ready look for family celebrations and formal events</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block font-medium">Fixed Rate</span>
+                  <span class="font-cinzel font-bold text-salonAccent text-xs sm:text-sm">PKR 8,000</span>
+                </div>
+              </label>
+
+              <!-- Service Switch Item 3 -->
+              <label class="flex items-center justify-between p-4 rounded-xl border border-salonSoftPink bg-salonPrimary hover:border-salonAccent/50 transition-all cursor-pointer group select-none">
+                <div class="flex items-center gap-3.5 flex-1 pr-4">
+                  <input type="checkbox" data-service-id="hair-styling" class="package-checkbox w-5.5 h-5.5 rounded border-salonAccent text-salonAccent focus:ring-salonAccent" />
+                  <div>
+                    <span class="font-cinzel text-xs sm:text-sm font-semibold text-salonText tracking-wide group-hover:text-salonAccent transition-colors block">Couture Hair Artistry / Bridal Updos</span>
+                    <span class="text-[10px] text-gray-500 font-light">Bespoke crown curling, textured updos, and delicate floral pinning</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block font-medium">Fixed Rate</span>
+                  <span class="font-cinzel font-bold text-salonAccent text-xs sm:text-sm">PKR 4,000</span>
+                </div>
+              </label>
+
+              <!-- Service Switch Item 4 -->
+              <label class="flex items-center justify-between p-4 rounded-xl border border-salonSoftPink bg-salonPrimary hover:border-salonAccent/50 transition-all cursor-pointer group select-none">
+                <div class="flex items-center gap-3.5 flex-1 pr-4">
+                  <input type="checkbox" data-service-id="hair-treatment" class="package-checkbox w-5.5 h-5.5 rounded border-salonAccent text-salonAccent focus:ring-salonAccent" />
+                  <div>
+                    <span class="font-cinzel text-xs sm:text-sm font-semibold text-salonText tracking-wide group-hover:text-salonAccent transition-colors block">Keratin Nourish & Smooth Hair Renewal</span>
+                    <span class="text-[10px] text-gray-500 font-light">Anti-frizz protein bonding treatments for silk restoration</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block font-medium">Fixed Rate</span>
+                  <span class="font-cinzel font-bold text-salonAccent text-xs sm:text-sm">PKR 15,000</span>
+                </div>
+              </label>
+
+              <!-- Service Switch Item 5 -->
+              <label class="flex items-center justify-between p-4 rounded-xl border border-salonSoftPink bg-salonPrimary hover:border-salonAccent/50 transition-all cursor-pointer group select-none">
+                <div class="flex items-center gap-3.5 flex-1 pr-4">
+                  <input type="checkbox" data-service-id="facial-treatment" class="package-checkbox w-5.5 h-5.5 rounded border-salonAccent text-salonAccent focus:ring-salonAccent" />
+                  <div>
+                    <span class="font-cinzel text-xs sm:text-sm font-semibold text-salonText tracking-wide group-hover:text-salonAccent transition-colors block">Luxury Gold Brightening Custom Facial</span>
+                    <span class="text-[10px] text-gray-500 font-light">Gold infusions to bring vibrant elasticity and oxygen layers back</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block font-medium">Fixed Rate</span>
+                  <span class="font-cinzel font-bold text-salonAccent text-xs sm:text-sm">PKR 6,500</span>
+                </div>
+              </label>
+
+              <!-- Service Switch Item 6 -->
+              <label class="flex items-center justify-between p-4 rounded-xl border border-salonSoftPink bg-salonPrimary hover:border-salonAccent/50 transition-all cursor-pointer group select-none">
+                <div class="flex items-center gap-3.5 flex-1 pr-4">
+                  <input type="checkbox" data-service-id="skin-care" class="package-checkbox w-5.5 h-5.5 rounded border-salonAccent text-salonAccent focus:ring-salonAccent" />
+                  <div>
+                    <span class="font-cinzel text-xs sm:text-sm font-semibold text-salonText tracking-wide group-hover:text-salonAccent transition-colors block">Signature Organic Pearl Skin Elixir</span>
+                    <span class="text-[10px] text-gray-500 font-light">Natural botanical extract mask conditioning for deep, clear hydration</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block font-medium">Fixed Rate</span>
+                  <span class="font-cinzel font-bold text-salonAccent text-xs sm:text-sm">PKR 5,000</span>
+                </div>
+              </label>
+
+              <!-- Service Switch Item 7 -->
+              <label class="flex items-center justify-between p-4 rounded-xl border border-salonSoftPink bg-salonPrimary hover:border-salonAccent/50 transition-all cursor-pointer group select-none">
+                <div class="flex items-center gap-3.5 flex-1 pr-4">
+                  <input type="checkbox" data-service-id="mani-pedi" class="package-checkbox w-5.5 h-5.5 rounded border-salonAccent text-salonAccent focus:ring-salonAccent" />
+                  <div>
+                    <span class="font-cinzel text-xs sm:text-sm font-semibold text-salonText tracking-wide group-hover:text-salonAccent transition-colors block">Luxury Hand & Foot Spa Therapy (Mani/Pedi)</span>
+                    <span class="text-[10px] text-gray-500 font-light">Paraffin rich luxury petaled sanitization and botanical relaxing scrubs</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block font-medium">Fixed Rate</span>
+                  <span class="font-cinzel font-bold text-salonAccent text-xs sm:text-sm">PKR 4,500</span>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Elegant Dynamic Package Invoice Card -->
+          <div class="lg:col-span-5">
+            <div class="sticky top-28 bg-salonPrimary rounded-3xl p-6 sm:p-8 border border-salonAccent luxury-shadow-lg space-y-6">
+              
+              <div class="text-center border-b border-salonSoftPink pb-6">
+                <span class="text-[9px] uppercase tracking-[0.25em] text-salonAccent font-bold">ESTIMATED ESTIMATES BY HOOR MAHAL</span>
+                <h3 class="font-cinzel text-lg font-bold text-salonText mt-2">YOUR LUXURY BEAUTY ENVELOPE</h3>
+              </div>
+
+              <!-- Calculator Fields -->
+              <div class="space-y-4 text-xs">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Selected Treatments:</span>
+                  <span id="planner-count" class="font-bold text-salonText">0</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Subtotal Rate:</span>
+                  <span id="planner-subtotal" class="font-cinzel font-semibold text-salonText">PKR 0</span>
+                </div>
+                
+                <div class="flex justify-between text-pink-600 font-semibold bg-pink-50/50 p-2 rounded border border-pink-100/50">
+                  <span>Special Multi-Service Offer Discount:</span>
+                  <span id="planner-discount">- PKR 0</span>
+                </div>
+
+                <!-- Incentive banner info -->
+                <div id="planner-discount-badge" class="p-3 bg-amber-50 text-amber-800 text-[10px] uppercase font-bold tracking-wider rounded text-center border border-amber-100 hidden">
+                  Choose 2 services to unlock 5% off, 3 for 10% off, 4+ for 15% off!
+                </div>
+                
+                <div class="border-t border-salonSoftPink pt-4 flex justify-between items-center">
+                  <span class="text-sm font-cinzel font-bold text-salonText uppercase tracking-wider">Estimated Total</span>
+                  <span id="planner-total" class="font-cinzel text-xl font-bold text-salonAccent">PKR 0</span>
+                </div>
+              </div>
+
+              <!-- CTA dispatch -->
+              <div class="space-y-3 pt-2">
+                <a id="planner-book-btn" href="javascript:void(0)" disabled class="w-full py-4 px-6 rounded-xl font-cinzel text-md tracking-wider bg-gray-100 text-gray-400 font-bold text-center block cursor-not-allowed">
+                  Book Custom Package
+                </a>
+                <p class="text-[10px] text-gray-400 text-center leading-relaxed">
+                  Clicking compiles your list and instantly generates your appointment draft message ready to dispatch on Hoor Mahal's reservation desk over WhatsApp.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Why Choose Hoor Mahal (Value Props Grid) -->
+    <section id="why-choose" class="py-20 md:py-28 bg-salonPrimary border-b border-salonSoftPink relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section Info -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-[0.35em] text-salonAccent uppercase block">Exceptional Standards</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl md:text-5xl text-salonText leading-tight tracking-tight">Why Modern Ladies Choose Hoor Mahal</h2>
+          <div class="h-0.5 w-24 bg-salonAccent mx-auto mt-4 rounded-full"></div>
+          <p class="text-gray-600 text-sm sm:text-base leading-relaxed font-light max-w-xl mx-auto">
+            Discover the uncompromised salon ethics that establish our boutique bridal studio as the most trusted pampering environment in Hyderabad.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Prop 1: Happy Clients -->
+          <div class="bg-salonSecondary p-8 rounded-3xl border border-salonSoftPink luxury-shadow-sm flex flex-col items-center text-center space-y-4">
+            <div class="w-12 h-12 bg-salonSoftPink rounded-full flex items-center justify-center text-salonAccent">
+              <i data-lucide="users" class="w-5.5 h-5.5"></i>
+            </div>
+            <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">243+ Satisfied Clients</h3>
+            <p class="text-gray-500 text-xs font-light leading-relaxed">
+              We have compiled a proud history of flawless bride makeovers and returning party makeup clients who trust our hands.
+            </p>
+          </div>
+
+          <!-- Prop 2: 4.9 Star Rating -->
+          <div class="bg-salonSecondary p-8 rounded-3xl border border-salonSoftPink luxury-shadow-sm flex flex-col items-center text-center space-y-4">
+            <div class="w-12 h-12 bg-salonSoftPink rounded-full flex items-center justify-center text-salonAccent">
+              <i data-lucide="star" class="w-5.5 h-5.5"></i>
+            </div>
+            <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Unrivaled 4.9 Star Rating</h3>
+            <p class="text-gray-500 text-xs font-light leading-relaxed">
+              Resonating beauty excellence verified by over 243+ organic community reviews highlighting our punctuality, hygiene and art.
+            </p>
+          </div>
+
+          <!-- Prop 3: Professional Experts -->
+          <div class="bg-salonSecondary p-8 rounded-3xl border border-salonSoftPink luxury-shadow-sm flex flex-col items-center text-center space-y-4">
+            <div class="w-12 h-12 bg-salonSoftPink rounded-full flex items-center justify-center text-salonAccent">
+              <i data-lucide="shield" class="w-5.5 h-5.5"></i>
+            </div>
+            <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Aesthetician Dil Expertise</h3>
+            <p class="text-gray-500 text-xs font-light leading-relaxed">
+              Supervised under senior cosmetics artist Dil, ensuring each contour enhancement respects safety, skin physiology, and layout details.
+            </p>
+          </div>
+
+          <!-- Prop 4: Premium Beauty Products -->
+          <div class="bg-salonSecondary p-8 rounded-3xl border border-salonSoftPink luxury-shadow-sm flex flex-col items-center text-center space-y-4">
+            <div class="w-12 h-12 bg-salonSoftPink rounded-full flex items-center justify-center text-salonAccent">
+              <i data-lucide="gem" class="w-5.5 h-5.5"></i>
+            </div>
+            <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Elite Imported Formulations</h3>
+            <p class="text-gray-500 text-xs font-light leading-relaxed">
+              We never cut corners with mock duplicates. We work strictly with elite sealants like Charlotte Tilbury, MAC, Dior, and Huda Beauty cosmetics.
+            </p>
+          </div>
+
+          <!-- Prop 5: Hygienic Environment -->
+          <div class="bg-salonSecondary p-8 rounded-3xl border border-salonSoftPink luxury-shadow-sm flex flex-col items-center text-center space-y-4">
+            <div class="w-12 h-12 bg-salonSoftPink rounded-full flex items-center justify-center text-salonAccent">
+              <i data-lucide="heart" class="w-5.5 h-5.5"></i>
+            </div>
+            <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Sterilized Hygienic Suite</h3>
+            <p class="text-gray-500 text-xs font-light leading-relaxed">
+              Single-use towels, medically-sterilized styling utensils, and continuous air sterilization protocols. Hand safety is our highest promise.
+            </p>
+          </div>
+
+          <!-- Prop 6: Personalized Service -->
+          <div class="bg-salonSecondary p-8 rounded-3xl border border-salonSoftPink luxury-shadow-sm flex flex-col items-center text-center space-y-4">
+            <div class="w-12 h-12 bg-salonSoftPink rounded-full flex items-center justify-center text-salonAccent">
+              <i data-lucide="crown" class="w-5.5 h-5.5"></i>
+            </div>
+            <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Bespoke Royal Attention</h3>
+            <p class="text-gray-500 text-xs font-light leading-relaxed">
+              Zero rushed appointments. We book limited clients daily to provide undivided concentration on each customized bridal dupatta and lash styling.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Bridal Experience Section (Premium typography & gradient showcase card details) -->
+    <section id="bridal" class="py-20 md:py-28 bg-salonSecondary border-b border-salonSoftPink relative overflow-hidden">
+      <div class="absolute top-[25%] right-[-150px] w-96 h-96 rounded-full bg-salonSoftPink/20 filter blur-3xl pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
+          <div class="space-y-4 max-w-2xl">
+            <span class="text-xs font-bold tracking-[0.3em] text-salonAccent uppercase block">A Masterpiece of Bridal Craft</span>
+            <h2 class="font-editorial text-3xl sm:text-4xl md:text-5xl text-salonText leading-tight tracking-tight">The Royal Bridal Milestones</h2>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed font-light">
+              We design holistic bridal prepare workflows that extend weeks before the wedding. Examine our core pillars of luxury focus that guarantee visual perfection.
+            </p>
+          </div>
+          <a href="https://wa.me/923091152287?text=Hello,%20I'd%20like%20to%20receive%20the%20complete%20Hoor%20Mahal%20Bridal%20Care%20Catalog." target="_blank" class="px-7 py-3.5 rounded-xl text-xs uppercase tracking-widest font-bold text-white gold-btn shadow-lg shadow-salonAccent/20 flex items-center justify-center gap-2">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            Get Bridal Catalog
+          </a>
+        </div>
+
+        <!-- 4 Premium Columns Showcase -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="p-8 rounded-3xl bg-salonPrimary border border-salonSoftPink hover:border-salonAccent transition-all relative group flex flex-col justify-between h-full">
+            <div class="space-y-6">
+              <span class="font-cinzel text-5xl font-light text-salonAccent/30 block group-hover:text-salonAccent transition-colors">01</span>
+              <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Bridal Excellence</h3>
+              <p class="text-gray-500 text-xs leading-relaxed font-light">
+                One-on-one custom facial mapping and look consultations carried out with master artist Dil. We blueprint your face details, dress colors, jewelry angles and portrait styles structure beforehand.
+              </p>
+            </div>
+            <div class="border-t border-salonSoftPink pt-6 mt-6">
+              <span class="text-[10px] uppercase tracking-widest text-salonAccent font-semibold">Phase: Consultation & Map</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-8 rounded-3xl bg-salonPrimary border border-salonSoftPink hover:border-salonAccent transition-all relative group flex flex-col justify-between h-full">
+            <div class="space-y-6">
+              <span class="font-cinzel text-5xl font-light text-salonAccent/30 block group-hover:text-salonAccent transition-colors">02</span>
+              <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Luxury Makeup</h3>
+              <p class="text-gray-500 text-xs leading-relaxed font-light">
+                Professional application of breathable foundations, water-resistant contours, custom luxury pigments, and HD airbrush textures that look incredibly velvet in high-definition photography.
+              </p>
+            </div>
+            <div class="border-t border-salonSoftPink pt-6 mt-6">
+              <span class="text-[10px] uppercase tracking-widest text-salonAccent font-semibold">Phase: Wedding Glam Day</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-8 rounded-3xl bg-salonPrimary border border-salonSoftPink hover:border-salonAccent transition-all relative group flex flex-col justify-between h-full">
+            <div class="space-y-6">
+              <span class="font-cinzel text-5xl font-light text-salonAccent/30 block group-hover:text-salonAccent transition-colors">03</span>
+              <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Hair Artistry</h3>
+              <p class="text-gray-500 text-xs leading-relaxed font-light">
+                Integrating high-end hair extensions, textured structure waves, traditional rose braids, custom crown tiara pinning, and heavy dupatta setting securely fixed to survive dance, walk, and climate.
+              </p>
+            </div>
+            <div class="border-t border-salonSoftPink pt-6 mt-6">
+              <span class="text-[10px] uppercase tracking-widest text-salonAccent font-semibold">Phase: Structural Styling</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="p-8 rounded-3xl bg-salonPrimary border border-salonSoftPink hover:border-salonAccent transition-all relative group flex flex-col justify-between h-full">
+            <div class="space-y-6">
+              <span class="font-cinzel text-5xl font-light text-salonAccent/30 block group-hover:text-salonAccent transition-colors">04</span>
+              <h3 class="font-cinzel text-md font-bold tracking-wider text-salonText uppercase">Skin Perfection</h3>
+              <p class="text-gray-500 text-xs leading-relaxed font-light">
+                Intensive clinical-safe herbal and brightening dermis conditioning carried out 3 days prior. Removes impurities, creates a healthy base layer, and ensures zero makeup congestion.
+              </p>
+            </div>
+            <div class="border-t border-salonSoftPink pt-6 mt-6">
+              <span class="text-[10px] uppercase tracking-widest text-salonAccent font-semibold">Phase: 3-Day Prior Glow</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: Testimonials (Curated Carousel) -->
+    <section id="testimonials" class="py-20 md:py-28 bg-salonPrimary border-b border-salonSoftPink relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section Info -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-[0.35em] text-salonAccent uppercase block">Love Letters From Hyderabad Brides</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl md:text-5xl text-salonText leading-tight tracking-tight">Voices of Radiant Satisfaction</h2>
+          <div class="h-0.5 w-24 bg-salonAccent mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Carousel Frame containing dynamic JS cards -->
+        <div class="max-w-4xl mx-auto">
+          
+          <div id="testimonial-card-container">
+            <!-- Populated via script.js -->
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="flex items-center justify-center gap-4 mt-8">
+            <button id="testimonial-prev" class="w-12 h-12 rounded-full border border-salonAccent/40 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all bg-salonSecondary luxury-shadow-sm" aria-label="Previous client review">
+              <i data-lucide="arrow-left" class="w-5 h-5"></i>
+            </button>
+            <button id="testimonial-next" class="w-12 h-12 rounded-full border border-salonAccent/40 flex items-center justify-center text-salonAccent hover:bg-salonAccent hover:text-white transition-all bg-salonSecondary luxury-shadow-sm" aria-label="Next client review">
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 7: Contact & Reservation Details -->
+    <section id="contact" class="py-20 md:py-28 bg-salonSecondary border-b border-salonSoftPink relative">
+      <div class="absolute inset-[15%] w-96 h-96 rounded-full bg-salonSoftPink/10 filter blur-3xl pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          
+          <!-- Column 1: Studio Details, Directions and Map -->
+          <div class="lg:col-span-5 space-y-8">
+            
+            <div class="space-y-4">
+              <span class="text-xs font-bold tracking-[0.3em] text-salonAccent uppercase block">Find Hoor Mahal</span>
+              <h2 class="font-editorial text-3xl sm:text-4xl text-salonText leading-tight tracking-tight">Visit Our Luxury Studio</h2>
+              <p class="text-gray-500 text-xs sm:text-sm font-light leading-relaxed">
+                Step inside our opulent salon venue situated in Hyderabad's premier Latifabad sector. View our contact cards below, open quick directional route paths, or schedule directly.
+              </p>
+            </div>
+
+            <!-- Contact detail badges -->
+            <div class="space-y-4.5 text-xs">
+              
+              <div class="flex items-start gap-4 p-5 rounded-2xl border border-salonSoftPink bg-salonPrimary luxury-shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-salonSoftPink text-salonAccent flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-cinzel text-xs font-bold tracking-wider text-salonText uppercase mb-1">Salon Address</h4>
+                  <p class="text-gray-600 leading-relaxed font-light">
+                    Latifabad Unit 06 Bungalow # 6, Near Musarrat Banquet, Next Ayesha Masjid, Latifabad Unit 6, Hyderabad, Sindh, Pakistan
+                  </p>
+                  <a href="https://maps.google.com/?q=Hoor+Mahal+by+Dil+Luxury+Beauty+Saloon+Latifabad+Unit+6+Hyderabad" target="_blank" class="inline-flex items-center gap-1.5 mt-3 text-[10px] uppercase tracking-widest text-salonAccent font-bold hover:text-salonAccentHover transition-colors">
+                    <i data-lucide="map" class="w-3.5 h-3.5"></i>
+                    Open Google Maps Direction Button
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-5 rounded-2xl border border-salonSoftPink bg-salonPrimary luxury-shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-salonSoftPink text-salonAccent flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-cinzel text-xs font-bold tracking-wider text-salonText uppercase mb-1">Phone & WhatsApp Contacts</h4>
+                  <p class="text-gray-600 font-light mb-2">Book directly with our client desk coordinator.</p>
+                  <div class="flex flex-wrap items-center gap-2.5">
+                    <a href="tel:+923091152287" class="px-4 py-2 rounded-lg bg-pink-50 hover:bg-pink-100 text-salonText font-semibold font-mono tracking-wider text-[11px] transition-colors inline-flex items-center gap-1">
+                      <i data-lucide="phone-call" class="w-3 h-3 text-pink-700"></i> +92 309 1152287
+                    </a>
+                    <a href="https://wa.me/923091152287" target="_blank" class="px-4 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-salonText font-semibold font-mono tracking-wider text-[11px] transition-colors inline-flex items-center gap-1">
+                      <i data-lucide="message-square" class="w-3 h-3 text-emerald-700"></i> WhatsApp Chat
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Working Hours card -->
+              <div class="flex items-start gap-4 p-5 rounded-2xl border border-salonSoftPink bg-salonPrimary luxury-shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-salonSoftPink text-salonAccent flex items-center justify-center shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-cinzel text-xs font-bold tracking-wider text-salonText uppercase mb-2">Business Hours</h4>
+                  <div class="grid grid-cols-2 gap-y-1 text-gray-600 text-xs font-light">
+                    <span>Tuesday — Sunday:</span>
+                    <strong class="text-gray-800 text-right">11:00 AM — 08:30 PM</strong>
+                    <span>Monday:</span>
+                    <strong class="text-salonAccent uppercase tracking-wider text-right text-[10px] font-bold">Studio Closed</strong>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Column 2: Interactive Contact / Booking Form & Maps Schema -->
+          <div class="lg:col-span-7 space-y-8">
+            <div class="p-8 md:p-10 luxury-border bg-salonPrimary rounded-3xl luxury-shadow-lg relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-24 h-24 bg-salonSoftPink/30 rounded-bl-full pointer-events-none"></div>
+              
+              <!-- Form Success State (hidden initially, toggled by script.js) -->
+              <div id="form-success-state" class="hidden text-center py-12 space-y-6">
+                <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mx-auto luxury-shadow-sm">
+                  <i data-lucide="sparkles" class="w-8 h-8 animate-spin-slow"></i>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-cinzel text-2xl font-bold tracking-wider text-salonText uppercase">Appointment Pre-Draft Prepared!</h3>
+                  <p class="text-gray-500 text-xs leading-relaxed max-w-sm mx-auto">
+                    Your details are saved and validated. We are automatically dispatching your custom beauty ticket to Dil's WhatsApp Desk.
+                  </p>
+                </div>
+                
+                <div id="receipt-details" class="max-w-md mx-auto">
+                  <!-- Populated from script.js dynamically -->
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <button id="open-whatsapp-btn" class="px-6 py-3.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-salonAccent text-white shadow-xl hover:bg-salonAccentHover transition-all flex items-center justify-center gap-2 font-cinzel">
+                    <i data-lucide="message-square" class="w-4 h-4"></i> Dispatch WhatsApp Now
+                  </button>
+                  <a href="#contact" onclick="window.location.reload()" class="px-6 py-3.5 rounded-xl text-xs font-semibold uppercase tracking-wider border border-gray-200 text-gray-500 hover:bg-gray-50 transition-all text-center">
+                    Submit Another Inquiry
+                  </a>
+                </div>
+              </div>
+
+              <!-- Content Form -->
+              <form id="luxury-contact-form" class="space-y-6">
+                
+                <div class="space-y-2">
+                  <h3 class="font-cinzel text-lg font-bold tracking-widest text-salonText uppercase">Select Consultant Slots</h3>
+                  <p class="text-[10px] text-gray-400">Fill in your reservation info to generate your direct appointment message.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div class="space-y-1.5">
+                    <label for="client-name" class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Your Noble Name <span class="text-salonAccent">*</span></label>
+                    <input type="text" id="client-name" required placeholder="e.g. Sanam Baloch" class="form-input w-full p-4 rounded-xl text-xs border border-salonSoftPink bg-white" />
+                  </div>
+                  <div class="space-y-1.5">
+                    <label for="client-phone" class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">WhatsApp / Mobile <span class="text-salonAccent">*</span></label>
+                    <input type="tel" id="client-phone" required placeholder="e.g. +92 300 1234567" class="form-input w-full p-4 rounded-xl text-xs border border-salonSoftPink bg-white" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div class="space-y-1.5">
+                    <label for="client-service" class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Select Treatment Category <span class="text-salonAccent">*</span></label>
+                    <select id="client-service" required class="form-input w-full p-4 rounded-xl text-xs border border-salonSoftPink bg-white">
+                      <option value="" disabled selected>Choose a premium category</option>
+                      <option value="Bridal Makeup Package">Barat / Valima Royal Bridal Makeup</option>
+                      <option value="HD Glam Party Makeup">HD Editorial Party Makeup</option>
+                      <option value="Couture Hair styling">Couture Hair Artistry / Cut</option>
+                      <option value="Premium Keratin Treatment">Keratin Smoothing Treatments</option>
+                      <option value="Gold Brightening facials">Gold custom Brightening Facials</option>
+                      <option value="Pearl skincare Elixir">Organic Skin Hydrating Care</option>
+                      <option value="Hand & Foot Spa Pedicure">Paraffin Petal Manicure & Pedicure</option>
+                    </select>
+                  </div>
+                  <div class="space-y-1.5">
+                    <label for="client-date" class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Preferred Date <span class="text-salonAccent">*</span></label>
+                    <input type="date" id="client-date" required class="form-input w-full p-4 rounded-xl text-xs border border-salonSoftPink bg-white" />
+                  </div>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="client-message" class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Special Requests / Bridal Notes</label>
+                  <textarea id="client-message" rows="3" placeholder="Explain your bridal dress shades, skin type concerns, jewelry styles, or any personalized beauty requests for Dil." class="form-input w-full p-4 rounded-xl text-xs border border-salonSoftPink bg-white resize-none"></textarea>
+                </div>
+
+                <div class="pt-2">
+                  <button type="submit" id="form-submit-btn" class="w-full py-4 rounded-xl font-cinzel text-xs tracking-widest uppercase font-bold text-white gold-btn shadow-lg shadow-salonAccent/25 flex items-center justify-center gap-2">
+                    <i data-lucide="message-square" class="w-4 h-4"></i> Send Consultation Inquiry
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+
+            <!-- Custom Designed Minimalist Google Maps Placeholder (No actual image used, elegant styled vector representation) -->
+            <div class="relative w-full rounded-3xl border border-salonAccent/20 luxury-shadow-sm p-6 sm:p-8 bg-salonPrimary overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+              
+              <!-- Map Radar schematic back layer -->
+              <div class="absolute -left-12 -bottom-12 w-48 h-48 rounded-full border border-dashed border-salonAccent/15 pointer-events-none"></div>
+
+              <div class="flex items-center gap-4 relative z-10">
+                <!-- Location map pin anchor with luxury animated radar effect -->
+                <div class="w-14 h-14 rounded-2xl bg-salonSoftPink/80 flex items-center justify-center text-salonAccent shrink-0 location-radar">
+                  <i data-lucide="map-pin" class="w-6.5 h-6.5 relative z-10"></i>
+                </div>
+
+                <div>
+                  <h4 class="font-cinzel text-xs font-bold tracking-wider text-salonText uppercase mb-0.5">Hyd Studio Coordinates</h4>
+                  <p class="text-[11px] font-mono text-gray-500 font-medium">Bungalow # 6, Latifabad Unit 6</p>
+                  <span class="text-[10px] bg-amber-50 text-amber-800 border border-amber-100/60 px-2 py-0.5 rounded font-mono font-medium block mt-1.5 w-max">25.3721° N, 68.3496° E</span>
+                </div>
+              </div>
+
+              <a href="https://maps.google.com/?q=Hoor+Mahal+by+Dil+Luxury+Beauty+Saloon+Latifabad+Unit+6+Hyderabad" target="_blank" class="w-full md:w-auto px-6 py-3.5 rounded-xl text-center text-xs uppercase tracking-widest font-bold border-2 border-salonAccent text-salonAccent hover:bg-salonAccent hover:text-white transition-all bg-white font-cinzel relative z-10 flex items-center justify-center gap-1.5">
+                <i data-lucide="navigation" class="w-4 h-4"></i> Get Map Route
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer of website -->
+    <footer class="bg-salonText text-salonPrimary/90 pt-16 pb-12 border-t-2 border-salonAccent relative overflow-hidden">
+      
+      <!-- Subtle gold geometric accents in footer -->
+      <div class="absolute -bottom-24 -right-24 w-60 h-60 rounded-full border border-salonAccent/5 pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-14 border-b border-salonPrimary/10">
+          
+          <!-- Column 1: Brand & Social Handles -->
+          <div class="lg:col-span-4 space-y-6">
+            <a href="#hero" class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-full border border-salonAccent flex items-center justify-center bg-transparent">
+                <span class="font-cinzel text-xs font-bold text-salonAccent tracking-widest">HM</span>
+              </div>
+              <div>
+                <span class="font-cinzel text-md font-bold tracking-widest text-salonPrimary block">HOOR MAHAL</span>
+                <span class="text-[8px] uppercase tracking-[0.25em] text-salonAccent block -mt-1">by Dil Luxury Salon</span>
+              </div>
+            </a>
+            
+            <p class="text-gray-400 text-xs font-light leading-relaxed max-w-sm">
+              Hyderabad's premier luxury salon. Reimagining traditional bridal looks into bespoke artistic transformations under the exquisite guidance of master aesthetician Dil.
+            </p>
+
+            <!-- Social Links -->
+            <div class="flex items-center gap-3.5 pt-2">
+              <a href="https://www.facebook.com/HoorMahalByDil" target="_blank" class="w-9 h-9 rounded-full border border-salonPrimary/20 hover:border-salonAccent hover:text-salonAccent flex items-center justify-center transition-colors text-gray-300" aria-label="Social link Facebook">
+                <i data-lucide="facebook" class="w-4.5 h-4.5"></i>
+              </a>
+              <a href="https://www.instagram.com/hoor_mahal_by_dil" target="_blank" class="w-9 h-9 rounded-full border border-salonPrimary/20 hover:border-salonAccent hover:text-salonAccent flex items-center justify-center transition-colors text-gray-300" aria-label="Social link Instagram">
+                <i data-lucide="instagram" class="w-4.5 h-4.5"></i>
+              </a>
+              <a href="https://wa.me/923091152287" target="_blank" class="w-9 h-9 rounded-full border border-salonPrimary/20 hover:border-salonAccent hover:text-salonAccent flex items-center justify-center transition-colors text-gray-300" aria-label="Social link WhatsApp">
+                <i data-lucide="message-square" class="w-4.5 h-4.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick navigation links -->
+          <div class="lg:col-span-3 space-y-4">
+            <h4 class="font-cinzel text-xs font-bold tracking-widest text-salonAccent uppercase">Quick Links</h4>
+            <div class="flex flex-col gap-3 text-xs font-light text-gray-400">
+              <a href="#about" class="hover:text-salonAccent transition-colors">About Hoor Mahal</a>
+              <a href="#services" class="hover:text-salonAccent transition-colors">Our Signature Menu</a>
+              <a href="#package-planner" class="hover:text-salonAccent transition-colors">Curated Package Builder</a>
+              <a href="#bridal" class="hover:text-salonAccent transition-colors">The Bridal Pathway</a>
+              <a href="#testimonials" class="hover:text-salonAccent transition-colors">Client Transformations</a>
+              <a href="#contact" class="hover:text-salonAccent transition-colors">Interactive Address Slot</a>
+            </div>
+          </div>
+
+          <!-- Column 3: Services menu direct links -->
+          <div class="lg:col-span-3 space-y-4">
+            <h4 class="font-cinzel text-xs font-bold tracking-widest text-salonAccent uppercase">Services</h4>
+            <div class="flex flex-col gap-3 text-xs font-light text-gray-400">
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20love%20to%20know%20more%20about%20your%20bridal/makeup%20packages." target="_blank" class="hover:text-salonAccent transition-colors">Royal Bridal Makeup</a>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20love%20to%20know%20more%20about%20your%20party%20makeup%20packages." target="_blank" class="hover:text-salonAccent transition-colors">HD Glam Party Style</a>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20love%20to%20know%20more%20about%20your%20hair%20styling%20packages." target="_blank" class="hover:text-salonAccent transition-colors">Couture Braiding & Curls</a>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20love%20to%20know%2520more%20about%20your%20hair%20care%20packages." target="_blank" class="hover:text-salonAccent transition-colors">Therapeutic Hair Care</a>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20love%20to%20know%20more%20about%20your%20facials%20makeup%20packages." target="_blank" class="hover:text-salonAccent transition-colors">Gold Brightening Facial</a>
+              <a href="https://wa.me/923091152287?text=Hello,%20I'd%20love%20to%20know%20more%20about%20your%20mani/pedi%20packages." target="_blank" class="hover:text-salonAccent transition-colors">Organic Hand & Foot Spa</a>
+            </div>
+          </div>
+
+          <!-- Column 4: Contact details summary links -->
+          <div class="lg:col-span-2 space-y-4">
+            <h4 class="font-cinzel text-xs font-bold tracking-widest text-salonAccent uppercase">Direct Desk</h4>
+            <div class="space-y-3.5 text-xs font-light text-gray-400">
+              <div>
+                <span class="block text-gray-500 font-medium mb-0.5">Call / Dial:</span>
+                <a href="tel:+923091152287" class="hover:text-salonAccent text-white font-mono tracking-wide font-semibold block">+92 309 1152287</a>
+              </div>
+              <div>
+                <span class="block text-gray-500 font-medium mb-0.5">Studio Desk:</span>
+                <span class="block text-white">Latifabad Unit 6, Hyderabad, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Copyright credits -->
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-light text-gray-500">
+          <p>&copy; 2026 Hoor Mahal by Dil Luxury Beauty Saloon. All Rights Reserved.</p>
+          <div class="flex items-center gap-4">
+            <a href="https://maps.google.com/?q=Hoor+Mahal+by+Dil+Luxury+Beauty+Saloon+Latifabad+Unit+6+Hyderabad" target="_blank" class="hover:text-salonAccent transition-colors">VIP Direction Maps Route</a>
+            <span>&bull;</span>
+            <a href="https://wa.me/923091152287" target="_blank" class="hover:text-salonAccent transition-colors">WhatsApp Concierge Desk</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Deferred JS actions script links -->
+    <script src="script.js"></script>
+  </body>
+</html>

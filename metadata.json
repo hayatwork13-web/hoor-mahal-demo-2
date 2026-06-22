@@ -1,0 +1,6 @@
+{
+  "name": "Hoor Mahal by Dil Luxury Beauty Saloon",
+  "description": "Luxury Ladies Beauty Salon & Bridal Studio in Hyderabad, Sindh, Pakistan. Premium beauty treatments, bridal transformations, skincare, and hair artistry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
