@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const servicesString = selectedServicesList.join(', ');
         const textMessage = `Hello Hoor Mahal! I am interested in building a customized beauty experience and would like to book the following package:\n\n✨ Selected Treatments:\n${selectedServicesList.map(item => `• ${item}`).join('\n')}\n\n📊 Estimations:\n- Subtotal: PKR ${subtotal.toLocaleString()}\n- Package Discount: PKR ${discountAmount.toLocaleString()} (${discountPercent * 100}% Offer)\n- Elite Package Price: PKR ${finalAmount.toLocaleString()}`;
         
-        plannerBookBtn.href = `https://wa.me/923091152287?text=${encodeURIComponent(textMessage)}`;
+        plannerBookBtn.href = `https://wa.me/923091152288?text=${encodeURIComponent(textMessage)}`;
       } else {
         plannerBookBtn.setAttribute('disabled', 'true');
         plannerBookBtn.className = "w-full py-4 px-6 rounded-xl font-cinzel text-md tracking-wider bg-gray-100 text-gray-400 font-bold text-center block cursor-not-allowed";
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Format WhatsApp query
       const whatsappBaseText = `Hello Hoor Mahal by Dil Luxury Beauty Saloon!\n\nI want to schedule an appointment booking:\n\n👤 Name: ${clientName}\n📞 Contact Phone: ${clientPhone}\n💅 Selected Category: ${clientService}\n📆 Preferred Date: ${clientDate}\n💬 Additional Notes: ${clientMessage ? clientMessage : 'None'}`;
       const encodedText = encodeURIComponent(whatsappBaseText);
-      const whatsappURL = `https://wa.me/923091152287?text=${encodedText}`;
+      const whatsappURL = `https://wa.me/923091152288?text=${encodedText}`;
 
       // Save appointment locally for VIP panel experience
       const localAppointments = JSON.parse(localStorage.getItem('hoor_mahal_appointments') || '[]');
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p><span class="text-gray-500">Date Proposed:</span> <strong class="text-gray-800">${appt.date}</strong></p>
           <div class="flex justify-between items-center mt-2.5 pt-2 border-t border-gray-100">
             <span class="text-[10px] text-amber-600 bg-amber-50 px-2 py-0.5 rounded font-semibold uppercase tracking-widest">Awaiting Artist Approval</span>
-            <a href="https://wa.me/923091152287?text=${encodeURIComponent(`Hello, checking appointment status for ref ${appt.refId} under the name ${appt.name}.`)}" target="_blank" class="text-pink-600 hover:text-pink-800 font-bold flex items-center gap-0.5">
+            <a href="https://wa.me/923091152288?text=${encodeURIComponent(`Hello, checking appointment status for ref ${appt.refId} under the name ${appt.name}.`)}" target="_blank" class="text-pink-600 hover:text-pink-800 font-bold flex items-center gap-0.5">
               Follow-up WhatsApp <span class="text-base">&rarr;</span>
             </a>
           </div>
